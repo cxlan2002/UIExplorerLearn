@@ -39,6 +39,10 @@ var DimensionsExample = require('./dimensionsExample');
 var LinkingExample = require('./linkingExample');
 var NetInfoExample = require('./netInfoExample');
 var PanResponderExample = require('./panResponderExample');
+var PixelRatioExample = require('./pixelRatioExample');
+var TimePickerAndroidExample = require('./timePickerAndroidExample');
+var ToastAndroidExample = require('./toastAndroidExample');
+var VibrationExample = require('./vibrationExample');
 
 var toolbarActions = [
   {title: 'Create', icon: require('../images/ic_create_black_48dp.png'), show: 'always'},
@@ -103,6 +107,14 @@ var DemoList = React.createClass({
         <NavigatorItem navigator={this.props.navigator} title="NetInfo" component={NetInfoExample} />
         
         <NavigatorItem navigator={this.props.navigator} title="PanResponder" component={PanResponderExample} />
+
+        <NavigatorItem navigator={this.props.navigator} title="PixelRatio" component={PixelRatioExample} />
+
+        <NavigatorItem navigator={this.props.navigator} title="TimePickerAndroid" component={TimePickerAndroidExample} />
+
+        <NavigatorItem navigator={this.props.navigator} title="ToastAndroid" component={ToastAndroidExample} />
+
+        <NavigatorItem navigator={this.props.navigator} title="Vibration" component={VibrationExample} />
 
       </ScrollView>
     );
